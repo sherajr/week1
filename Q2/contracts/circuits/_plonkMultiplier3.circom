@@ -10,7 +10,7 @@ template Multiplier2() {
  }
 
 //This circuit multiplies in1, in2, and in3.
-template Multiplier3 () {
+template _plonkMultiplier3 () {
    //Declaration of signals and components.
    signal input in1;
    signal input in2;
@@ -27,4 +27,4 @@ template Multiplier3 () {
    out <== mult2.out;
 }
 
-component main = Multiplier3();
+component main = _plonkMultiplier3();
